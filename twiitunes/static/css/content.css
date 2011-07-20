@@ -1,0 +1,619 @@
+@charset "UTF-8";
+
+/* 共通 */
+div.more {
+  text-align: right;
+  }
+
+div.more a {
+  padding-left: 9px;
+  background: url("img/more_link.jpg") no-repeat left center;
+  }
+
+span.date {
+  color: #fd8000;
+  font-size: 12px;
+  }
+
+span.view {
+  color: #fd8000;
+  font-size: 12px;
+  }
+
+
+
+body {
+  background-color: #ddd;
+  }
+
+#header #head-left h1 {
+  }
+
+#header #head-left #head-text {
+  text-indent: -99999px;
+  }
+
+#header #head-right {
+  border: solid 0px #000;
+  text-align: right;
+  }
+
+#header #global-navi ul li {
+  border: solid 0px #000;
+  display: inline;
+  text-align: right;
+  }
+
+#header #global-navi ul li:before {
+  content: "|";
+  }
+
+#header #global-navi ul li#nocont:before {
+  content: "";
+  }
+
+#header #global-navi ul li a {
+  padding-left:5px;
+  padding-right:5px;
+}
+
+#header #global-navi ul #global-top a {
+  width: 179px;
+  }
+
+#twitter-icon-s {
+  margin: 0 0.2em;
+  vertical-align: -0.3em;
+}
+
+#alpha-inner #resultnum {
+ padding-left:20px;
+ background: url("../img/icon_Result.gif") no-repeat;
+}
+
+
+#alpha #ResultArea {
+  width: 580px;
+  margin: 10px 0px 12px 0px;
+  border-radius: 5px;         /* CSS3 */
+  -moz-border-radius: 5px;    /* Firefox */
+  -webkit-border-radius: 5px; /* Safari,Chrome */
+  background-color: #ebf5fa;
+}
+
+
+#alpha #ResultArea-contents {
+  margin:5px;
+  padding: 8px 7px 2px 7px;
+  min-height:1px;
+}
+
+
+#alpha #TrackArea {
+  width: auto;
+  margin: 10px 10px;
+  padding:10px;
+  border-radius: 5px;         /* CSS3 */
+  -moz-border-radius: 5px;    /* Firefox */
+  -webkit-border-radius: 5px; /* Safari,Chrome */
+  background-color: #ebf5fa;
+}
+
+
+#alpha #TrackArea-contents {
+  margin:5px;
+  padding: 8px 7px 2px 7px;
+  min-height:1px;
+}
+
+#TrackArea {
+  width: 580px;
+  margin: 0;
+}
+
+
+#alpha #musicImg {
+  margin:0;
+  padding:0;
+}
+
+#alpha #musicImg p {
+  margin: 0px;
+  width: 30px;
+  height: 30px;
+  float: left; 
+  display: block;
+  position: relative;  
+}
+
+#alpha #musicImg p.trackpage {
+  width: 100px;
+  height:100px;
+}
+
+
+#alpha #musicData {
+  margin: 0px;
+  padding-left:8px;
+  width: 468px;
+  float: left; 
+}
+
+#TrackArea-contents #musicData {
+  width: 500px;
+  padding-bottom:10px;
+}
+
+
+#TrackArea-contents #musicPlayer {
+
+}
+
+p#flash_alert{
+  width:400px;
+  padding:10px;
+  background:red;
+  text-align:center;
+  font-size:120%;
+  color:#fff;
+}
+
+p#flash_alert a{
+ color:#fff;
+ text-decoration:underline;
+}
+
+#TrackArea-contents #musicPlayer #jquery_jplayer p a,#ResultArea #ResultArea-contents #jplayerId-7206179 p {
+
+}
+
+
+#TrackArea-contents #musicPlayer .jp-single-player{
+  float:left;
+}
+
+#TrackArea-contents #musicPlayer a#tweet_button{
+  float:left;
+  margin-left:30px;
+}
+
+#alpha #musicData ul {
+ margin:0 0 0 5px;
+ padding:0;
+}
+
+#alpha #musicData ul li {
+ padding:0 0 5px 20px;
+}
+
+#alpha #musicData ul li#artist{
+ background: url("../img/icon_artist.gif") no-repeat 0px 3px;
+}
+
+#alpha #musicData ul li#track{
+ background: url("../img/icon_music.gif") no-repeat 0px 3px;
+}
+
+
+#alpha #musicData ul li#album{
+ background: url("../img/icon_album.gif") no-repeat 0px 3px;
+}
+
+#alpha #musicData ul li#itune{
+ background: url("../img/icon_itune.jpg") no-repeat 0px 3px;
+}
+
+#alpha #musicData p {
+ margin-left:25px;
+}
+
+#alpha #musicData a.tweets{
+ dispaly:block;
+ background: url("../img/icon_tweets.gif") no-repeat 0px 3px;
+ padding:0 0 0 15px;
+ margin:0 0 0 10px;
+ color: #457fbf;
+}
+
+
+#alpha #musicPlay {
+  float: left;
+  vertical-align: middle;
+  margin:0 0 0 17px;
+}
+
+
+
+#alpha #tw_wrapper {
+  margin:0 0 0 40px;
+  padding:15px 0 0 0;
+  }
+
+#alpha #tw_wrapper p#user{
+  margin:0;
+  padding:0 0 15px 0;
+  }
+
+#alpha #public-timeline{
+  margin:5px 0 0 10px;
+  padding-left:17px;
+  background: url("../img/icon_publicTimeline.jpg") no-repeat 0px 5px;
+}
+
+
+#alpha #tw_area {
+  margin-bottom:10px;
+  padding: 7px 0px;
+  }
+
+
+#alpha #tw_img {
+  width: 50px;
+  float: left;
+  }
+
+#alpha #tw_img img{
+  width: 50px;
+  height: 50px;
+  }
+
+
+#alpha #tw_tweet {
+  width: 500px;
+  float: left;
+  }
+
+
+#alpha #tw_tweet #star {
+  margin:15px 0 0 0;
+  float:left;
+  }
+
+#alpha #tw_tweet p{
+  margin-top:15px;
+  padding-left:15px;
+  font-size:90%;
+  background: url("../img/icon_twitter_s.gif") no-repeat 0 4px ;
+  float:right;
+}
+
+#alpha #tw_tweet p#public-tweet-i{
+  margin:0;
+  padding-left:15px;
+  font-size:90%;
+  background: url("../img/icon_twitter_s.gif") no-repeat 0 4px ;
+  float:right;
+}
+
+#alpha #tw_tweet span#date, #alpha #your_comments #trackbubble span#date {
+  font-size:80%;
+  color:#777;
+}
+
+
+#alpha #comment_area {
+  margin-bottom:10px;
+  padding: 7px 0px;
+  }
+
+
+#alpha #comment_area p #countup {
+  padding-left: 10px;
+  color:#999;
+  }
+#alpha #comment_area p .error {
+  color:#ff4500;
+  }
+
+
+#alpha #comment_area p #countmsg{
+  color:#999;
+}
+
+#alpha #comment_area textarea {
+  margin:0 0 10px 0;
+  padding:10px;
+  width:570px;
+}
+
+#alpha #comment_area #commentpost{
+  padding-top:10px;
+  text-align:center;
+}
+
+#alpha #comment_area #commentpost p{
+  font-size:90%;
+
+}
+
+#alpha #your_tweets {
+  margin:15px;
+  margin-left:33px;
+  padding:0;
+}
+
+#alpha #your_tweets p#user{
+  margin:10px 0 20px 0;
+  padding-left:15px;
+  background: url("../img/icon_twitter_s.gif") no-repeat 0 4px ;
+}
+
+#alpha #whos-tweet{
+  margin:5px 0 10px 10px;
+  padding-left:15px;
+  background: url("../img/icon_twitter_s.gif") no-repeat 0 5px ;
+}
+
+#alpha #your_tweets #your_icon{
+  width:60px;
+  float:left;
+  padding-left:2px;
+}
+
+#alpha #your_tweets #your_icon img {
+  width:50px;
+  height:50px;
+}
+
+#alpha #your_tweets #your_comments{
+  float:left;
+
+}
+
+#alpha #your_comments #trackbubble{
+ margin-bottom:25px;
+}
+
+
+#alpha #your_comments #trackbubble #star{
+  margin:15px 0 0 0;
+  }
+
+#alpha #tw_tweet .clearfix #public-star{
+   margin-top:5px;
+   float:left;
+}
+
+
+#alpha #your_comments #trackbubble #star #fixed,
+#alpha #your_comments #trackbubble #star p#tweets,
+#alpha #tw_tweet #trackbubble #star #fixed,
+#alpha #tw_tweet #trackbubble #star p#tweets {
+  float:left;
+}
+
+#alpha #tw_tweet #trackbubble #star p#tweets {
+  margin-top:0;
+}
+
+
+
+#alpha #your_comments #trackbubble p{
+ margin-bottom:5px;
+}
+
+#alpha #your_comments #trackbubble ul li{
+ display:block;
+ margin-top:5px;
+ padding:0 0 5px 20px;
+ float:left;
+}
+
+#alpha #your_comments #trackbubble ul li#track,#alpha #tw_wrapper #tw_area #trackbubble ul li#track{
+ background: url("../img/icon_music_clear.gif") no-repeat 0px 3px;
+}
+
+#alpha #tw_wrapper #tw_area #trackbubble ul li#track {
+  padding-left:17px;
+}
+
+#alpha #your_comments #trackbubble #star p#tweets,
+#alpha #tw_tweet #trackbubble #star p#tweets {
+ background: url("../img/icon_tweets.gif") no-repeat 0px 6px;
+ padding-left:17px;
+ margin-left:25px;
+}
+
+#alpha #tw_tweet #trackbubble p#comment{
+ background:none;
+ margin:15px 0 0;
+ padding:0;
+}
+
+#alpha #tw_tweet .triangle-border p#comment{
+ background:none;
+ margin:15px 0 15px 17px;
+ padding:0;
+ float:none;
+}
+
+#alpha #tw_tweet .triangle-border #track {
+ background: url("../img/icon_music_clear.gif") no-repeat 0px 3px;
+ padding-left:17px;
+}
+
+
+#alpha #tw_tweet .triangle-border #track a{
+ font-size:90%;
+}
+
+#alpha #tw_tweet .triangle-border #track span#tweets{
+ background: url("../img/icon_tweets.gif") no-repeat 0px 5px;
+ padding-left:15px;
+ margin-left:10px;
+}
+
+
+
+#alpha #tw_tweet #trackbubble > p{
+ float:none;
+ background:none;
+ padding-left:0;
+ margin-top:5px;
+}
+
+
+#alpha #ad_space {
+ padding:20px 0 10px;
+ width:100%;
+}
+
+#alpha #ad_space img{
+ display:block;
+ margin:0 auto;
+}
+
+#alpha #top-help{
+ background: url("../img/top_bg.png") repeat-x 0 0;
+ width:670px;
+ margin:4px 3px 0 4px;
+}
+
+
+#alpha #top-help h1 {
+ background: url("../img/message.png") no-repeat 0 0;
+ width:556px;
+ height:47px;
+ margin:0 auto;
+}
+
+#alpha #top-help h1 span,
+#alpha #top-help #step-wrap #step1 h2 span,
+#alpha #top-help #step-wrap #step2 h2 span,
+#alpha #top-help #step-wrap #step3 h2 span{
+ display:none;
+}
+
+#alpha #top-help #searcharea {
+ margin:50px 0 50px 57px;
+ width:567px;
+}
+
+#alpha #top-help #searcharea input[type="text"]{
+ width:405px;
+}
+
+#alpha #top-help #step-wrap{
+ margin:50px 0 0 55px;
+ padding:0;
+}
+
+#alpha #top-help #step-wrap #step1{
+ float:left;
+ background: url("../img/Search_Play_img.png") no-repeat 0 bottom;
+ height:255px;
+ width:240px;
+ margin:0;
+ padding:0;
+}
+
+#alpha #top-help #step-wrap #step1 h2{
+ background: url("../img/Search_Play.png") no-repeat 0 0;
+ width:172px;
+ height:44px;
+}
+
+#alpha #top-help #step-wrap #step2{
+ float:left;
+ background: url("../img/tweet_img.png") no-repeat 0 bottom;
+ height:255px;
+ width:200px;
+ margin:0;
+ padding:0;
+
+}
+
+#alpha #top-help #step-wrap #step2 h2{
+ background: url("../img/tweet.png") no-repeat 0 0;
+ width:172px;
+ height:44px;
+}
+
+#alpha #top-help #step-wrap #step3{
+ float:left;
+ background: url("../img/share_img.png") no-repeat 0 bottom;
+ height:255px;
+ width:150px;
+ margin:0;
+ padding:0;
+
+}
+
+#alpha #top-help #step-wrap #step3 h2{
+ background: url("../img/share.png") no-repeat 0 0;
+ width:172px;
+ height:44px;
+}
+
+
+#link-next-page-area {
+ text-align:center;
+ padding-top:15px;
+  padding-bottom:15px;
+}
+
+#link-next-page {
+  font-size:110%;
+  border:solid 1px #bbb;
+  padding:5px 20px;
+}
+
+#beta #tw_wrapper {
+  margin:0;
+  padding:0;
+  }
+
+#beta #tw_area {
+  padding: 7px 0px 7px 0px;
+  }
+
+#beta #tw_img {
+  width: 35px;
+  height: 35px;  
+  float: left;
+  }
+
+#beta #tw_img img{
+  width: 35px;
+  height: 35px;  
+  }
+
+#beta #tw_tweet {
+  width: 200px;
+  float: left;
+  }
+
+
+#beta #tw_tweet p{
+  margin-top:10px;
+  padding-left:15px;
+  font-size:90%;
+ background: url("../img/icon_twitter_s.gif") no-repeat 0 4px ;
+}
+
+
+
+#footer-inner {
+  font-size: 12px;
+  margin:0;
+  }
+
+
+#footer-inner #copy{
+  float:left;
+  }
+
+#footer-inner #contact{
+  float:left;
+  padding-left:20px;
+  }
+
+#footer-inner #contact span{
+  font-size:90%;
+  }
+
+#footer-inner #power{
+  float:right;
+  padding-right:10px;
+  }
+

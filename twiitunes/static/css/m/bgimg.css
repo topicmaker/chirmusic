@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+
+#header #head-left #head-text {
+  width: 231px;
+  height: 27px;
+  }
+
+#header #global-navi ul li a {
+  height: 29px;
+  }
+
+#header #global-navi ul #global-news a {
+  width: 178px;
+  background-position: -179px 0;
+  }
+
+#header #global-navi ul #global-document-set a {
+  width: 178px;
+  background-position: -357px 0;
+  }

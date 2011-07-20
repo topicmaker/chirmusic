@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* ========================= *
+ * Since:    2006-12-11
+ * Modified:  2006-12-12
+ * Guideline:  Ver.0.00
+ * Editor:  Suzuki Kenichi
+ * =========================
+ */
+
+/* ========================= *
+以下の設定は絶対に変更しないでください。
+もし変更が必要な場合には別途reset_ow.cssを作成して上書きしてください。
+ * =========================
+ */
+
+/*==============================リセット　CSS==============================*/
+/*--------------------全体--------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  }
+body {
+  font-size: 100%;
+  line-height: 140%;
+  }
+/*--------------------リンク--------------------*/
+a:link, a:visited, a:active, a:hover {
+  color: #00F;
+  text-decoration: none;
+  }
+a:hover {
+  text-decoration: underline;
+  }
+/*--------------------テーブル--------------------*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  }
+caption, th {
+  text-align: left;
+  }
+th {
+  font-weight: normal;
+  }
+td {
+  vertical-align: top;
+  }
+/*--------------------リスト--------------------*/
+ol, ul {
+  list-style-type: none;
+  }
+/*--------------------フォーム--------------------*/
+/* IE以外のモダンブラウザー用 */
+html>/**/body option {
+  padding-right: 0.4em;
+  }
+/* ここまで */
+/* IE以外のモダンブラウザー用 */
+html>/**/body option {
+  padding-right: 0.4em;
+  }
+/* ここまで */
+/* Opera用　全体を設定して:rootでOpera以外を元に戻す */
+select {
+  padding-right: 0.6em;
+  letter-spacing: -0.12em;
+  }
+:root select{
+  padding-right: 0;
+  letter-spacing: 0;
+  }
+/* ここまで */
+/* IE用 */
+* html legend {
+  margin-left: -0.45em;
+  color: #000;
+  }
+*:first-child+html body legend {
+  margin-left: -0.45em;
+  color: #000;
+  }
+/* ここまで */
+/*--------------------ボーダー--------------------*/
+abbr, acronym, fieldset, img {
+  border-style: none;
+  }
+hr {
+  border: none;
+  background-color: #000;
+  height: 1px;
+  }
+/* IE用 */
+* html hr {
+  border-bottom: 1px solid #000;
+  }
+*:first-child+html body hr {
+  border-bottom: 1px solid #000;
+  }
+/* ここまで */
+ins {
+  text-decoration: none;
+  }
+/*--------------------フォント--------------------*/
+h1, h2, h3, h4, h5,h6, {
+  font-size: 100%;
+  font-weight: normal;
+  }
+address, cite, dfn, em, var {
+  font-style: normal;
+  }
+strong {
+  font-weight: normal
+  }
+code {
+  font-size: 100%;
+  letter-spacing: -0.14em;
+  }
+pre {
+  font-size: 100%;
+  }
+/*--------------------引用符--------------------*/
+q:before, q:after {
+  content: '';
+  }
+/*--------------------改行--------------------*/
+/* IEのみ対応 */
+h1, h2, h3, h4, h5,h6, p, caption, th, td, li, dt, dd {
+  word-break: normal;
+  word-wrap: break-word;
+  }

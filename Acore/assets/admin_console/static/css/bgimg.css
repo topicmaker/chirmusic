@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------------------
+Site ID
+----------------------------------------------------------------------------- */
+
+#header h1 {
+  background-image: url("img/site_id.png");
+  background-repeat: no-repeat;
+  width: 288px;
+  height: 33px;
+  text-indent: -9999px;
+  }
+
+/* -------------------------------------------------------------------------- */
+
+#global-navi {
+  background-image: url("img/bg_global_navi.jpg");
+  }
+
+#local-navi-top {
+  height: 10px;
+  background-image: url("img/bg_local_navi_top.gif");
+  background-repeat: no-repeat;
+}
+
+#local-navi-bottom {
+  height: 10px;
+  background-image: url("img/bg_local_navi_bottom.gif");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+#local-navi h3 {
+  background-image: url("img/bg_hl_local_navi.jpg");
+  }
+
+#beta div.form-container table th.legend {
+  background-image: url("img/bg_data_header.jpg");
+  }
+
+#beta table.detail th.legend {
+  background-image: url("img/bg_data_header.jpg");
+  }
+
+table.data th {
+  background-image: url("img/bg_global_navi.jpg");
+  }
+
+div.data h3 {
+  background-image: url("icon/16/filesystem_folder_grey_open.png");
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+  }
+
+div.data dt {
+  background-image: url("icon/16/mimetype_misc.png");
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+  }
+
+div.data dd p.property {
+  background-image: url("icon/16/action_info.png");
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+  }
+
+ul.pagination li.prev * {
+  background-image: url("icon/16/action_back.png");
+  background-repeat: no-repeat;
+  }
+
+ul.pagination li.next * {
+  background-image: url("icon/16/action_forward.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  }
+
+div.detail-operation a {
+  background-image: url("icon/16/action_back.png");
+  background-repeat: no-repeat;
+  }
+
+form.login legend {
+  background-image: url("icon/32/app_personal.png");
+  background-repeat: no-repeat;
+  }
+
+a.rightarrow {
+  background-image: url("img/rightarrow.png");
+  background-repeat: no-repeat;
+  background-position: 0 3px;
+  }
+
+a.leftarrow {
+  background-image: url("img/leftarrow.png");
+  background-repeat: no-repeat;
+  background-position: 0 3px;
+  }

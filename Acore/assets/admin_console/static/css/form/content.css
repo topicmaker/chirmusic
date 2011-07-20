@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------------------
+ Basic
+---------------------------------------------------------------------------- */
+
+p.legend {
+  margin-bottom: 1em;
+  }
+p.legend em {
+  color: #C00; font-style: normal;
+  }
+
+div.form-container form p {
+  margin: 0;
+  }
+div.form-container form p.note {
+  margin-left: 170px;
+  color: #333;
+  }
+
+/* ----------------------------------------------------------------------------
+ Field Set
+---------------------------------------------------------------------------- */
+
+div.form-container form fieldset {
+  margin: 10px 0;
+  padding: 10px;
+  border: #DDD 1px solid;
+  }
+div.form-container form legend {
+  font-weight: bold;
+  color: #666;
+  }
+div.form-container form fieldset div {
+  padding: 0.25em 0;
+  }
+
+/* ----------------------------------------------------------------------------
+ Label
+---------------------------------------------------------------------------- */
+
+div.form-container label, 
+div.form-container span.label {
+  margin-right: 10px;
+  padding-right: 10px;
+  width: 150px;
+  display: block;
+  float: left;
+  text-align: right;
+  position: relative;
+  font-weight: bold;
+  }
+
+
+div.form-container label em, 
+div.form-container span.label em {
+  position: absolute;
+  right: 0;
+  font-style: normal;
+  color: #C00;
+  line-height: 1.4em;
+  }
+
+/* ----------------------------------------------------------------------------
+ Element
+---------------------------------------------------------------------------- */
+
+div.form-container textarea {
+  }
+
+/* ----------------------------------------------------------------------------
+ Control Set
+---------------------------------------------------------------------------- */
+
+div.form-container div.controlset label, 
+div.form-container div.controlset input {
+  display: inline;
+  float: none;
+  font-weight: normal;
+  border: none;
+  }
+div.form-container div.controlset div {
+  padding: 0;
+  margin-left: 170px;
+  }
+
+/* ----------------------------------------------------------------------------
+ Button
+---------------------------------------------------------------------------- */
+
+div.form-container .buttonrow {
+  margin-left: 180px;
+  }
+div.form-container .buttonrow input.button {
+  padding: 0 1em;
+  text-align: center;
+  }
+
+/* ----------------------------------------------------------------------------
+ Error
+---------------------------------------------------------------------------- */
+
+div.errors {
+  margin: 0 0 10px 0;
+  padding: 5px 10px;
+  border: #FC6 1px solid;
+  background-color: #FFC;
+  }
+div.errors p {
+  margin: 0;
+  }
+div.errors p em {
+  font-style: normal;
+  font-weight: bold;
+  }
+div.errors p strong {
+  font-weight: bold;
+  }
+div.errors ul {
+  margin: 0;
+  padding: 1em 2em;
+  }
+div.errors ul li {
+  list-style-type: disc;
+  color: #f00;
+  }
+div.form-container label.error, 
+div.form-container span.error {
+  color: #C00;
+  }
+div.form-container input.error {
+  border-color: #C00;
+  background-color: #FEF;
+  }
+
+/* ----------------------------------------------------------------------------
+ Confirm
+---------------------------------------------------------------------------- */
+
+div.form-container table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+  }
+
+div.form-container table th.legend {
+  width: 100%;
+  padding: 0 1em;
+  background-color: #ccc;
+  color: #fff;
+  text-align: left;
+  }
+
+div.form-container table th,
+div.form-container table td {
+  padding: 0.5em;
+  line-height: 1.6;
+  }
+
+div.form-container table th {
+  width: 20%;
+  text-align: right;
+  color: #666;
+  background-color: #eee;
+  border-bottom: 1px solid #fff;
+  }
+
+div.form-container table td {
+  border-bottom: 1px solid #fff;
+  }
+
+div.form-container table tr.buttonrow th {
+  background: none;
+  }
+
+div.form-container table tr.buttonrow td {
+  padding-top: 1em;
+  }
+
+
+/* ----------------------------------------------------------------------------
+ Result
+---------------------------------------------------------------------------- */
+
+div.form-container .result-message * {
+  text-align: center;
+  }
+

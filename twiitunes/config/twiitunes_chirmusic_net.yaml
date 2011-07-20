@@ -1,0 +1,30 @@
+name: twiitunes_chirmusic_net
+root: '/var/www/applications/twiitunes/twiitunes/'
+log:
+  level: debug
+debug: on
+product_mode: on
+
+session:
+  store:
+    class: DBM
+    args:
+      file: '/var/www/applications/twiitunes/twiitunes/tmp/twiitunes.session.dbm'
+      dbm_class: DB_File
+  state:
+    class: Cookie
+    args:
+      name: twiitunes_session_id
+      expires: '+30d'
+
+rp_script_name: ''
+
+include_path:
+  - '/var/www/applications/twiitunes/twiitunes/templates'
+  - '/var/www/applications/twiitunes/Acore/assets/admin_console/templates'
+
+#　Controller
+tweet_twitter:
+  hash_tag: '#chirmusic #nowplaying'
+  valid_characters_length: 130
+

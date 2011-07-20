@@ -1,0 +1,501 @@
+@charset "UTF-8";
+
+#container-inner {
+  padding: 1em;
+  }
+
+#header-navi {
+   position: relative;
+   padding-top: 1px;
+  }
+
+#beta {
+  padding-left: 1em;
+  }
+
+/* ----------------------------------------------------------------------------
+Site Id
+ ----------------------------------------------------------------------------*/
+
+#header h1 {
+  margin-top: 0.5em;
+  }
+
+/* ----------------------------------------------------------------------------
+Global Navi
+ ----------------------------------------------------------------------------*/
+
+#global-navi {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #666;
+  }
+
+#global-navi li {
+  display: inline;
+  padding: 0 1em;
+  border-right: 1px solid #5E9EB7;
+  }
+
+#global-navi li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  }
+#global-navi li a:hover {
+  color: #333;
+  }
+
+#global-navi li a.current {
+  color: #497E93;
+  }
+
+#global-navi.welcome-message {
+  text-align: center;
+  }
+
+#global-navi.welcome-message li {
+  border: 0;
+  color: #fff;
+  }
+
+/* ----------------------------------------------------------------------------
+Remote Navi
+ ----------------------------------------------------------------------------*/
+
+#remote-navi {
+  position: absolute;
+  top: -24px;
+  right: 0;
+  _right: 10px;
+  margin: 0;
+  padding: 0;
+  }
+
+#remote-navi li {
+  display: inline;
+  padding: 0 0.5em;
+  border-left: 1px dotted #333;
+  font-size: 90%;
+  }
+
+#remote-navi li.first {
+  border: 0;
+  }
+
+#remote-navi a {
+  color: #1A6199;
+  }
+
+/* ----------------------------------------------------------------------------
+Bread Crumb Navi
+ ----------------------------------------------------------------------------*/
+
+#bread-crumb-navi {
+  margin: 0;
+  padding-left: 1em;
+  border: 1px solid #ccc;
+  border-top: 1px solid #fff;
+  background-color: #eeeee0;
+  }
+
+#bread-crumb-navi li {
+  display: inline;
+  }
+
+#bread-crumb-navi li a {
+  margin-right: 0.5em;
+  }
+
+/* ----------------------------------------------------------------------------
+Local Navi
+ ----------------------------------------------------------------------------*/
+
+#local-navi-container {
+  width: 195px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  }
+
+#local-navi {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  }
+
+#local-navi h3,
+#local-navi ul {
+  margin: 0;
+}
+
+#local-navi h3 {
+  margin: 0 5px 5px;
+  padding-left: 0.5em;
+  font-size: 90%;
+  color: #fff;
+  border: 1px solid #999;
+}
+
+#local-navi ul a {
+  display: block;
+  width: 185px;
+  border-bottom: 1px dotted #ccc;
+  color: #1A6199;
+  text-decoration: none;
+  line-height: 1.4;
+  }
+#local-navi ul a:hover {
+  background-color: #eee;
+  }
+
+#local-navi ul li {
+  margin: 0 0 0 5px;
+  list-style-type: none;
+  }
+
+#local-navi-top,
+#local-navi-bottom {
+  font-size: 0;
+  }
+
+/* ----------------------------------------------------------------------------
+Form
+ ----------------------------------------------------------------------------*/
+
+.require-mark {
+  text-align: right;
+  }
+
+#beta div.form-container table {
+  border-collapse: separate;
+  }
+
+#beta div.form-container table th.legend {
+  background-color: #fff;
+  color: #666;
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #666;
+  border-right: 1px solid #666;
+  font-size: 90%;
+  font-weight: bold;
+  }
+
+#beta div.form-container table td {
+  color: #000;
+  }
+
+/* ----------------------------------------------------------------------------
+Login Form
+ ----------------------------------------------------------------------------*/
+
+form.login {
+  width: 38em;
+  margin: 4em auto;
+  }
+
+form.login div.buttonrow {
+  margin:0;
+  text-align: center;
+  }
+
+div.form-container form.login legend {
+  padding-left: 32px;
+  line-height: 32px;
+  color: #1A6199;
+  }
+
+div.form-container form.login label {
+  width: 100px;
+  }
+
+form.login ul {
+  padding-top: 1em;
+  text-align:center;
+  }
+
+form.login ul li {
+  display: inline;
+  padding: 0 1em;
+  border-left: 1px dotted #999;
+  }
+
+form.login ul li.first {
+  border: 0;
+  }
+
+form.login a {
+  padding-top: 2px;
+  font-size: 80%;
+  color: #1A6199;
+  }
+
+form.login p.error {
+  margin-bottom: 1em;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+  }
+
+/* ----------------------------------------------------------------------------
+Data List
+ ----------------------------------------------------------------------------*/
+
+table.data {
+  width: 99%;
+  }
+
+table.data th,
+table.data td {
+  padding: 0em 1em;
+  font-size: 90%;
+  }
+
+table.data th {
+  font-weight: bold;
+  color: #fff;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+  }
+
+table.data th.first {
+  border-left: 1px solid #666;
+  }
+
+table.data th.last {
+  border-right: 1px solid #666;
+  }
+
+table.data td {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px dotted #666;
+  }
+
+table.data td.checkbox {
+  width: 1em;
+  vertical-align: middle;
+  }
+
+table.data td.data-operation {
+  text-align: right;
+  }
+
+table.data td.data-operation a {
+  color: #1A6199;
+  padding: 0.5em;
+  font-size: 95%;
+  }
+
+.data-operation {
+  margin: 3px 0;
+  font-size: 85%;
+  }
+
+div.data h3 {
+  padding-left: 20px;
+  border-bottom: 1px solid #ccc;
+  }
+
+div.data dl {
+  margin: 0 0 1.5em;
+  }
+
+div.data dl dt {
+  padding-left: 20px;
+  font-weight: bold;
+  }
+  
+div.data dl dt.data-operation {
+  padding-left: 0;
+  font-size: 100%;
+  background: none;
+  }
+
+div.data dl dd {
+  margin: 0;
+  padding-left: 20px;
+  }
+
+div.data dl dd p.summary {
+  margin: 0;
+  padding: 0;
+  font-size: 90%;
+  }
+
+div.data dl dd p.property {
+  margin: 0;
+  padding: 0;
+  text-indent: 20px;
+  font-size: 90%;
+  }
+
+div.data dd span.key {
+  margin-right: 0.5em;
+  color: #73BEDD;
+  font-weight: bold;
+  }
+
+div.data dd span.val {
+  margin-right: 0.5em;
+  padding-right: 0.8em;
+  color: #666;
+  border-right: 1px dotted #999;
+  }
+
+div.data dd.data-operation {
+  margin-top: 0.5em;
+  border-top: 1px dotted #ccc;
+  text-align: right;
+  }
+
+div.data dd.data-operation a {
+  color: #1A6199;
+  padding: 0.5em;
+  }
+
+div.data div.data-operation {
+  padding: 1em 20px;
+  background-color: #eeeee0;
+  }
+
+.data-operation .button {
+  padding: 0 1em;
+  text-align: center;
+  }
+
+/* ----------------------------------------------------------------------------
+Data Detail
+ ----------------------------------------------------------------------------*/
+
+table.detail th,
+table.detail td {
+  padding: 0.5em;
+  font-size: 90%;
+  }
+
+table.detail th {
+  width: 120px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  text-align: right;
+  }
+
+table.detail th.legend {
+  padding: 0 1em;
+  text-align: left;
+  font-size: 85%;
+  color: #666;
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #666;
+  border-right: 1px solid #666;
+  }
+
+table.detail td {
+  border-bottom: 1px solid #ccc;
+  }
+
+div.detail-operation {
+  position: relative;
+  padding: 1em 0;
+  background-color: #eeeee0;
+  }
+
+div.detail-operation form {
+  float: right;
+  margin-right: 1em;
+  }
+
+div.detail-operation input.button {
+  padding: 0 1em;
+  text-align: center;
+  }
+
+div.detail-operation a {
+  margin-left: 1em;
+  padding-bottom: 1px;
+  padding-left: 20px;
+  color: green;
+  }
+
+/* ----------------------------------------------------------------------------
+Pagination
+ ----------------------------------------------------------------------------*/
+ul.pagination {
+  margin: 0;
+  text-align: right;
+  }
+
+ul.pagination li {
+  display: inline;
+  }
+
+ul.pagination li.prev * {
+  padding-left: 20px;
+  }
+
+ul.pagination li.next * {
+  padding-right: 20px;
+  }
+
+ul.pagination li a {
+  color: green;
+  }
+
+ul.pagination li span {
+  color: gray;
+  }
+
+/* ----------------------------------------------------------------------------
+Icon
+ ----------------------------------------------------------------------------*/
+
+div.menu {
+  margin: 1em 0;
+  clear: left;
+  }
+
+div.menu div.item a {
+  display: block;
+  width: 128px;
+  height: 60px;
+  float: left;
+  margin-bottom: 2em;
+  
+  padding: 32px 10px 0;
+  background-position: center top;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #1A6199;
+  }
+
+h2.icon {
+  margin-bottom: 0;
+  }
+
+h2.icon div {
+  height: 32px;
+  padding: 0.5em 0 0;
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  }
+
+h3.icon div {
+  padding: 0;
+  padding-left: 22px;
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+  }
+
+/* ----------------------------------------------------------------------------
+Footer
+ ----------------------------------------------------------------------------*/
+
+#footer {
+  margin-top: 4em;
+  border-top: 1px solid #ccc;
+  }
+
+#footer-inner p {
+    text-align: center;
+    font-size: 80%;
+  }
+

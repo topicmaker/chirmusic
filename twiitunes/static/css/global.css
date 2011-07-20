@@ -1,0 +1,256 @@
+@charset "UTF-8";
+  
+/* ----------------------------------------------------------------------------
+ Base
+---------------------------------------------------------------------------- */
+
+* {
+  margin: 0; padding: 0;
+  border: none 0 transparent;
+  border-collapse: collapse;
+  color: #333;
+  font: 10pt/1.6 "MS PGothic", Osaka, "MS Gothic", Gothic, sans-serif;
+  /* ’Ç‰Á */
+  font-family: Arial,Helvetica,Verdana,"qMmpSPro W3","Hiragino Kaku Gothic Pro",Osaka,"CI",Meiryo,"lr oSVbN",sans-serif;
+  /* text-align: left; */
+  text-decoration: none;
+  word-break: normal;
+  list-style-type: none;
+  }
+
+/* ----------------------------------------------------------------------------
+ Body
+---------------------------------------------------------------------------- */
+
+body {
+  background-color:#fff;
+  background-image: url("bg.jpg") 
+}
+
+
+/* ----------------------------------------------------------------------------
+ Link
+---------------------------------------------------------------------------- */
+
+a:link {
+  color: #457fbf;
+  text-decoration: none;
+  }
+a:visited {
+  color: #457fbf;
+  text-decoration: none;
+  }
+a:hover {
+  text-decoration: underline;
+  }
+a:link img, a:visited img, a:hover img {
+  border-style: none;
+  }
+
+/* ----------------------------------------------------------------------------
+ Head Line
+---------------------------------------------------------------------------- */
+
+h1 {
+  font-size: 140%;font-weight: bold; line-height: 1.4;
+  }
+h2 {
+  font-size: 120%;font-weight: bold; line-height: 1.6;
+  }
+h3, h4 {
+  font-size: 100%; font-weight: normal; line-height: 1.6;
+  }
+
+/* ----------------------------------------------------------------------------
+ Table
+---------------------------------------------------------------------------- */
+
+table,caption,th,tr,td {
+  vertical-align: top;
+  }
+table {
+  border-collapse: collapse;
+  }
+
+/* ----------------------------------------------------------------------------
+ List
+---------------------------------------------------------------------------- */
+
+ul.disc {
+  margin: 1em 2em;
+  }
+
+ol.decimal {
+  margin: 1em 2.4em;
+  }
+
+ul.disc li {
+  list-style-type: disc;
+  }
+
+ol.decimal li {
+  list-style-type: decimal;
+  }
+
+/* ----------------------------------------------------------------------------
+ Form
+---------------------------------------------------------------------------- */
+
+input.button {
+  /* hack for IE6 */
+  _text-align: center;
+  _font-size: 100%;
+  border-top: 1px solid #999;
+  border-right: 1px outset #999;
+  border-bottom: 1px outset #999;
+  border-left: 1px solid #999;
+}
+input, textarea, select { 
+  margin: 2px; 
+}
+input {
+  /* hack for IE7 */
+  *padding: 0;
+  *line-height: 1;
+
+  /* hack for IE6 */
+  _padding: 2px 0 2px 3px;
+  _font-size: 100%;
+  _line-height: 1;
+  _border: 1px solid #999;
+}
+
+textarea {
+  padding: 50px 0 1px 4px; 
+  _border: 1px solid #999;
+}
+
+input, select { vertical-align: middle }
+input[type=button], input[type=submit], input[type=reset] {
+ background: #eee;
+ color: #222;
+ border: 1px outset #ccc;
+ /*padding: .1em .5em;*/
+ /* hack for IE7 */
+ *text-align: center;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+ background: #ccb;
+}
+input[type=button][disabled], input[type=submit][disabled],
+input[type=reset][disabled] {
+ background: #f6f6f6;
+ border-style: solid;
+ color: #999;
+}
+input[type=text], input[type=password],input.textwidget, textarea { border: 1px solid #BDBDC1}
+input[type=text], input[type=password], input.textwidget { padding: .0em .0em }
+input[type=text]:focus, input[type=password]:focus, input.textwidget:focus, textarea:focus {
+ border: 1px solid #886;
+}
+option { border-bottom: 1px dotted #d7d7d7 }
+fieldset { border: 1px solid #d7d7d7; padding: .5em; margin: 0 }
+fieldset.iefix { background: transparent; border: none; padding: 0; margin: 0 }
+* html fieldset.iefix { width: 98% }
+fieldset.iefix p { margin: 0 }
+legend { color: #999; padding: 0 .25em; font-size: 90%; font-weight: bold }
+label.disabled { color: #d7d7d7 }
+.buttons { margin: .5em .5em .5em 0 }
+.buttons form, .buttons form div { display: inline }
+.buttons input { margin: 1em .5em .1em 0 }
+
+form dl {
+  clear: left;
+}
+form dl:after {
+   content: ".";
+   display: block;
+   clear: both;
+   height: 0;
+   visibility: hidden;
+  }
+form dl { 
+  display: inline-block;
+  }
+/* exlude MacIE5 \*/
+* html form dl { height: 1% }
+form dl {display:block;}
+/* end MacIE5 */
+
+form fieldset dt {
+  float: left;
+  width: 160px;
+  padding-top: 2px;
+  text-align: right;
+  }
+form fieldset dt label {
+  padding-right: 10px;
+  font-weight: bold;
+  }
+
+.error_msg li {
+  color: #f00;
+  font-weight: bold;
+}
+
+form .alert {
+  color: #f00;
+  }
+
+input.no-border {
+  _border: none;
+  }
+
+/* ----------------------------------------------------------------------------
+ Clear Fix
+---------------------------------------------------------------------------- */
+
+.clearfix:after,
+#sortable li:after,
+.column .column-inner:after,
+#tw_area:after{
+   content: ".";
+   display: block;
+   clear: both;
+   height: 0;
+   visibility: hidden;
+  }
+.clearfix,
+#sortable li,
+.column .column-inner,
+#tw_area{ 
+  display: inline-block;
+  }
+/* exlude MacIE5 \*/
+* html .clearfix,
+* html #sortable li,
+* html .column .column-inner,
+* html #tw_area{ height: 1% }
+.clearfix,
+#sortable li,
+.column .column-inner,
+#tw_area{display:block;}
+/* end MacIE5 */
+
+/* ----------------------------------------------------------------------------
+ Others
+---------------------------------------------------------------------------- */
+
+.alt {
+  display: none;
+  }
+.underline {
+  text-decoration: underline;
+  }
+.italic {
+  font-style: italic;
+  }
+
+/* ----------------------------------------------------------------------------
+ IE6 Background Flicker
+ http://ajaxian.com/archives/no-more-ie6-background-flicker
+---------------------------------------------------------------------------- */
+html {
+  filter: expression(document.execCommand("BackgroundImageCache", false, true));
+}

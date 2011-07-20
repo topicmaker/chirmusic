@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+#container {
+  width: 964px;
+  margin: 0 auto;
+  }
+
+#container-inner {
+  padding: 0 0px;
+  }
+
+#header {
+  border: solid 0px #118822;
+  margin-bottom: 3px;
+  padding-top: 8px;
+  }
+
+#header-inner {
+  position: relative;
+  }
+#header #head-left {
+  border: solid 0px #000;
+  width: 258px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  /* float: left; */
+  }
+
+#header #head-left h1 {
+  padding: 17px 0px 0px 0px;
+  }
+
+
+#header #head-right {
+  border: solid 0px #000;
+  width: 706px;
+  position: absolute;
+  left: 258px;
+  top: 0px;
+  }
+
+#header #global-navi {
+
+  width: 706px;
+  /* margin-top: 20px; */
+  }
+
+#header #searcharea {
+  border: solid 1px #999;
+  margin: 8px 0px 0px 337px;
+  padding:0;
+  width: 369px;
+  height: 50px;
+}
+
+
+#header #searcharea p {
+  position: relative; margin: 0;
+}
+
+#header #searcharea p label {
+  position: absolute; top: 16px; left: 14px;
+  color:#999;
+}
+
+#header #searcharea p br {
+  display: none;
+}
+
+#searcharea input[type=text] {
+  width: 207px;
+  height: 32px;
+  margin:8px 5px 0 8px;
+  padding:0;
+  float:left;
+  display: block;
+  border-color:999;
+}
+
+
+#searcharea input[type=image]{
+  width: 138px;
+  height: 32px;
+  margin:8px 0 0 0;
+  padding:0;
+  float:left;
+  }  
+
+
+#pagebody {
+  border: solid 0px #fff;
+  margin-top: 97px;
+  position: relative;  
+  }
+
+#pagebody-inner {
+  }
+
+#pagebody_footer {
+  width: 964px;
+  height: 10px;
+  margin: 0px;
+  }
+
+#container-inner {
+  }
+
+#alpha {
+  border: solid 0px #000;
+  width: 678px;
+  float: left;  
+  /* position: absolute;
+  left: 0px;
+  top: 0px; */
+  min-height:800px;
+  height: auto !important;
+  height: 800px;
+  }
+
+#alpha-inner {
+  padding: 20px 49px 30px 49px;
+  }
+
+
+#beta {
+  border: solid 0px #000;
+  float:left;
+  top: 0px;
+  }
+
+#beta-inner {
+
+  width: 250px;
+  margin: 20px 0 0 18px; 
+  /* margin: 0px 14px; */
+  }
+
+
+#beta #beta-inner h2 {
+
+  width: 63px;
+  height: 19px;
+  }
+
+
+#footer {
+  width: 964px;
+  clear: both;
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+  }

@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+#container {
+  }
+
+#container-inner {
+  }
+
+#header {
+  }
+
+#header-inner {
+  }
+
+#pagebody {
+  }
+
+#pagebody-inner {
+  margin-top: 1em;
+  }
+
+#container-inner {
+  }
+
+#alpha {
+  }
+
+#alpha-inner {
+  }
+
+#pagebody.two-columns #alpha {
+  float: right;
+  width: 195px;
+  }
+
+#pagebody.two-columns #alpha-inner {
+  }
+
+#pagebody.two-columns #beta {
+  margin-right: 205px;
+  }
+
+#pagebody.two-columns #beta-inner {
+  }
+
+#beta {
+  }
+
+#gamma {
+  }
+
+#gamma-inner {
+  }
+
+#footer {
+  }
+
+#footer-inner {
+  }

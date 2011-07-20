@@ -1,0 +1,82 @@
+name: twiitunes
+root: .
+log:
+  level: debug
+debug: on
+product_mode:
+
+session:
+  store:
+    class: DBM
+    args:
+      file: tmp/twiitunes.session.dbm
+      dbm_class: DB_File
+  state:
+    class: Cookie
+    args:
+      name: twiitunes_session_id
+      expires: '+30d'
+
+admin_console:
+  disable_eval_functions:
+
+include_path:
+  - '../Acore/assets/admin_console/templates'
+rp_script_name: '/chirmusic/'
+
+'Model::DBIC':
+  schema_class: 'MySchema'
+  connect_info:
+    - dbi:Pg:dbname=twiitunes
+    - twiitunes
+    - 
+    - AutoCommit: 0
+      RaiseError: 1
+      pg_enable_utf8 : 1
+
+# Twitter OAuth / chirmusic
+twitter_oauth:
+  consumer_key: 'ME5c4ON2tXjjdrHJAP3YQ'
+  consumer_key_secret: 's6eVxFkswbCp2Eb3kGd4mXifTUlnuwGAhVpGkkyaRpc'
+  callback_url: 'http://chirmusic.net/auth_callback'
+
+twitter_uri: 'http://twitter.com/'
+
+# Controller
+default_validate:
+  number: '^\d+$'
+  page_row: 200
+search_validate:
+  keyword:
+    length: 100
+  page:
+    regex: '^\d+$'
+    max: 100
+search_itunes:
+  page_row:
+    default: 20
+    smartphone: 20
+tweet_validate:
+  description:
+    length: 600
+tweet_timeline:
+  page_row:
+    default: 5
+    smartphone: 5
+your_tweet:
+  page_row:
+    default: 5
+    smartphone: 5
+public_timeline:
+    top_page_row:
+      default: 5
+      smartphone: 5
+    sidebar_page_row:
+      default: 5
+      smartphone: 5
+tweet_twitter:
+  hash_tag: '#chirmusic_dev'
+  valid_characters_length: 130
+
+#　Tracking
+itunes_store_tracking_url: 'http://click.linksynergy.com/fs-bin/stat?id=jhy1uVEGQn8&offerid=94348&type=3&subid=0&tmpid=2192&RD_PARM1='
